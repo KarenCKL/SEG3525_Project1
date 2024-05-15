@@ -1,7 +1,6 @@
 /* Apply Open Sans font to all elements */
 body {
   font-family: "Open Sans", sans-serif;
-  padding-top: 75px;
 }
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -88,3 +87,13 @@ backface-visibility: visible;
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #1B9EDA;
 }
+@media (min-width: 992px) {
+  #carousel{
+    height:250px;
+  }
+}
+@media (max-width: 1000px) {
+    #carousel{
+      height:500px;
+    }
+  }
