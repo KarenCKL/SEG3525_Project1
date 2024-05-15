@@ -12,7 +12,6 @@ body {
   font-weight: 500;
 }
 
-
 /* Set the default color of the links */
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -21,24 +20,71 @@ body {
 /* transform the links when hovering over them  */
 /* large screen */
 @media (min-width: 992px) {
-    .navbar-dark .navbar-nav .nav-link:hover {
-      transform: scale(1.15);
-    }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    transform: scale(1.15);
+  }
 }
 /*medium and small screens */
 @media (max-width: 992px) {
-    .navbar-dark .navbar-collapse {
-        margin-top: 15px;
-        border-top: 1px solid rgba(255, 255, 255,.3);
-    }
-    .navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
-        margin-left: 0;
-    }
+  .navbar-dark .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    margin-left: 0;
+  }
 }
 
+/*** Owl-carousel ***/
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background:#1B9EDA;
+  color: #fff;
+  text-decoration: none;
+}
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  background:white;
+  border: #cccccc solid 1px;
 
-/*** Hero Section ***/
-
-
-
+  display: block;
+-webkit-backface-visibility: visible;
+backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #1B9EDA;
+}

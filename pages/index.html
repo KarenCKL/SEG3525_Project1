@@ -14,6 +14,11 @@
         <!-- links to css stylesheet -->
         <link rel="stylesheet" href="../css/main.min.css">
         <link rel="stylesheet" href="../css/style.css">
+        <!-- external own carousel css -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
@@ -43,9 +48,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Reviews</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                         <a id="#book" href="" class="btn bg-white py-2 px-4">Book an Appointment</a>
@@ -135,7 +137,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
         <!-- About Us section ends here -->
 
         <!-- Services section starts here -->
@@ -190,13 +192,12 @@
                 <h2 class="text-info text-center">Our Team Members</h2>
             </div>
             <div class="row g-4 px-5 py-4">
-                <div class="col-4">
-                    <div class="rounded-circle overflow-hidden">
-                        <img class="img-fluid" src="../assets/ceo.png" alt="image showing Dr James Rodriguez">
-                    </div>
+                <div class="col-3">
+                    <img class="img-fluid rounded-circle" src="../assets/ceo.png"
+                        alt="image showing Dr James Rodriguez">
                 </div>
-                <div class="col-8 d-flex flex-column justify-content-center">
-                    <div style="margin-left: 50px;">
+                <div class="col-9 d-flex flex-column justify-content-center">
+                    <div style="margin-left: 40px;">
                         <h4>Dr James Rodriguez</h4>
                         <p class="pt-2">
                             Dr. James Rodriguez is the founder and CEO of Ottawa Dental Clinic. He is a graduate of the
@@ -209,8 +210,8 @@
                 </div>
             </div>
             <div class="row g-4 px-5 py-4">
-                <div class="col-8 d-flex flex-column justify-content-center">
-                    <div style="margin-right: 50px;">
+                <div class="col-9 d-flex flex-column justify-content-center">
+                    <div style="margin-right:50px;">
                         <h4>Dr Bradley Williams</h4>
                         <p class="pt-2">
                             Dr. Bradley Williams, a graduate from McGill University, brings over 5 years of experience
@@ -223,19 +224,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="rounded-circle overflow-hidden">
-                        <img class="img-fluid" src="../assets/dentist5.jpg" alt="image showing Dr Bradley Williams">
-                    </div>
+                <div class="col-3">
+                    <img class="img-fluid rounded-circle" src="../assets/dentist5.jpg"
+                        alt="image showing Dr Bradley Williams">
                 </div>
             </div>
             <div class="row g-4 px-5 py-4">
-                <div class="col-4">
-                    <div class="rounded-circle overflow-hidden">
-                        <img class="img-fluid" src="../assets/dentist2.jpg" alt="Image showing Dr Natalie Smith">
-                    </div>
+                <div class="col-3">
+                    <img class="img-fluid rounded-circle" src="../assets/dentist2.jpg"
+                        alt="Image showing Dr Natalie Smith">
                 </div>
-                <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="col-9 d-flex flex-column justify-content-center">
                     <div style="margin-left: 50px;">
                         <h4>Dr Natalie Smith</h4>
                         <p class="pt-2">
@@ -250,59 +249,106 @@
                 </div>
             </div>
             <div class="row g-4 px-5 py-4">
-                <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="col-9 d-flex flex-column justify-content-center">
                     <div style="margin-right: 50px;">
                         <h4>Chloe Johnson</h4>
                         <p class="pt-2">
                             Chloe Johnson is a nurse that works at the dental care clinic and assists the dentists
-                            during
-                            various procedures. With her expertise and caring nature, Chloe ensures that patients feel
+                            during various procedures. With her expertise and caring nature, Chloe ensures that patients
+                            feel
                             comfortable and well taken care of during their dental visits. She plays a crucial role in
                             maintaining a smooth workflow at the clinic and contributes to the overall success of the
-                            dental
-                            team. Chloe's dedication to patient care and her ability to work closely with the dentists
-                            make
-                            her an invaluable member of the team.
+                            dental team. Chloe's dedication to patient care and her ability to work closely with the
+                            dentists
+                            make her an invaluable member of the team.
                         </p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="rounded-circle overflow-hidden">
-                        <img class="img-fluid" src="../assets/assistant1.jpg" alt="image showing nurse Chloe Johnson">
-                    </div>
-
+                <div class="col-3">
+                    <img class="img-fluid rounded-circle" src="../assets/assistant1.jpg"
+                        alt="image showing nurse Chloe Johnson">
                 </div>
             </div>
             <!-- team section ends here -->
 
             <!-- reviews section starts here -->
             <div id="review" class="container-fluid col-lg-12 p-5">
+                <div class="row py-4">
+                    <h2 class="text-info text-center">Our Clients Reviews</h2>
+                </div>
                 <div class="row">
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body">
-                             <h5></h5>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card" style="height:250px">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid rounded-circle mx-auto" src="../assets/client1.jpg"
+                                                alt="" style="width: 150px; height: 150px;">
+                                        </div>
+                                        <div class="col-6">
+                                            <p>"Caring and competent, the Ottawa Dentist Clinic goes above and beyond to
+                                                ensure patient satisfaction. Their personalized approach and gentle
+                                                touch make every visit a pleasant one."</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body">
-
+                        <div class="item">
+                            <div class="card" style="height:250px">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid rounded-circle" src="../assets/client6.jpg" alt=""
+                                                style="width: 150px; height: 150px;">
+                                        </div>
+                                        <div class="col-6">
+                                            <p>
+                                                "The Ottawa Dentist Clinic provided exceptional care and attention to
+                                                detail
+                                                during my recent visit, making me feel comfortable and confident in
+                                                their
+                                                expertise."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body">
-
+                        <div class="item">
+                            <div class="card" style="height:250px">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid rounded-circle" src="../assets/client3.jpg" alt=""
+                                                style="width: 150px; height: 150px;">
+                                        </div>
+                                        <div class="col-6">
+                                            "From scheduling appointments to the actual treatment, their team exhibited
+                                            professionalism and warmth, ensuring a positive experience overall. Highly
+                                            recommend!"
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body">
-
+                        <div class="item">
+                            <div class="card" style="height:250px">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="img-fluid rounded-circle" src="../assets/client5.jpg" alt=""
+                                                style="width: 150px; height: 150px;">
+                                        </div>
+                                        <div class="col-6">
+                                            "The Ottawa Dentist Clinic surpassed my expectations with their
+                                            knowledgeable
+                                            staff and modern facilities, leaving me with a brighter smile and a newfound
+                                            appreciation for dental care."
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -312,11 +358,13 @@
 
 
         </div>
-
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
 
 </html>
