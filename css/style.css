@@ -26,10 +26,13 @@ body {
     padding-top: 70px;
   }
   #services{
-    padding-top: 100px;
+    padding-top: 70px;
   }
   #team{
-    padding-top: 100px;
+    padding-top: 70px;
+  }
+  #booking{
+    padding-top: 40px;
   }
 }
 /*medium and small screens */
@@ -43,12 +46,32 @@ body {
     margin-left: 0;
   }
   #about-us {
-    padding-top: 350px;
+    padding-top: 320px;
   }
   #services{
-    padding-top: 350px;
+    padding-top: 300px;
   }
   #team{
-    padding-top: 350px;
+    padding-top: 300px;
+  }
+  #booking{
+    padding-top: 280px;
   }
 }
+/* for smaller screen size */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+

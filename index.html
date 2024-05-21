@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#team">Our Team</a>
                         </li>
                     </ul>
-                    <a id="#book" href="" class="btn bg-white py-2 px-4">Book an Appointment</a>
+                    <a href="#booking" class="btn bg-white py-2 px-4">Book an Appointment</a>
                 </div>
             </div>
         </nav>
@@ -65,8 +65,9 @@
                             and friendly environment.
                         </p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-2">
-                            <button type="button" class="btn btn-info btn-lg px-4 me-md-2 text-white fs-4">Book an
-                                Appointment</button>
+                            <a href="#booking" type="button"
+                                class="btn btn-info btn-lg px-4 me-md-2 text-white fs-4">Book an
+                                Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +140,7 @@
 
         <!-- Services section starts here -->
         <section id="services">
-            <div class="container-fluid col-lg-12">
+            <div class="container-fluid col-lg-12 px-5 py-4">
                 <div class="row py-3">
                     <h2 class="text-info text-center">Our Services</h2>
                 </div>
@@ -199,7 +200,7 @@
 
         <!-- team section starts here -->
         <section id="team">
-            <div class="container-fluid col-lg-12">
+            <div class="container-fluid col-lg-12 py-4 px-5">
                 <div class="row py-4">
                     <h2 class="text-info text-center">Our Team Members</h2>
                 </div>
@@ -295,9 +296,114 @@
         </section>
         <!-- team section ends here -->
 
-
-
         <!-- Booking section begins here -->
+        <div id="booking">
+            <div class="container-fluid col-lg-12 py-5 px-5">
+                <div class="row g-5 bg-info-subtle pb-3 px-3">
+                    <div class="col-md-6 pt-2">
+                        <h3 class="text-info">Ottawa Dental Clinic</h3>
+                        <h5 class="py-2 fs-6">Location: 150 Louis Pasteur Private, Ottawa, ON K1N 1A2, Canada</h5>
+                        <div class="map-responsive">
+                            <iframe id="map" class="col-md-12"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.451558405615!2d-75.68254308447863!3d45.420066879100094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a77b5e6c27%3A0x36e89c445bb0a60a!2s150%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%201A2%2C%20Canada!5e0!3m2!1sen!2sus!4v1685382636092!5m2!1sen!2sus"
+                                height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <h5 class="text-info fst-italic text-center pt-4 pb-2">Opening Hours</h5>
+                        <p class="text-center">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p class="text-center">Saturday: 9:00 AM - 12:30 PM</p>
+                        <p class="text-center">Sunday: Closed</p>
+                        <p class="text-center">Phone | (613) 555-1234</p>
+                        <p class="text-center">Email | dental@ottawaClinic.ca</p>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="">
+                            <h1 class="text-info mb-4">Book an Appointment</h1>
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="fname"
+                                                placeholder="Enter your First Name">
+                                            <label for="fname">Enter your First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="lname"
+                                                placeholder="Enter your Last Name">
+                                            <label for="lname">Enter your Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="phone"
+                                                placeholder="Enter your Phone Number">
+                                            <label for="phone">Enter your Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Enter your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="select">
+                                                <option value="1">Fillings and Restoration</option>
+                                                <option value="2">Teeth Whitening</option>
+                                                <option value="3">Teeth Extraction</option>
+                                                <option value="4">Routine Cleanings</option>
+                                            </select>
+                                            <label for="select">Select a Service</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="select1">
+                                                <option value="1">Dr James Rodriguez</option>
+                                                <option value="2">Dr Bradley Williams</option>
+                                                <option value="3">Dr Natalie Smith</option>
+                                            </select>
+                                            <label for="select1">Select a Dentist</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <label for="date">Select a date:</label>
+                                            <input type="date" class="form-control pb-4" id="date" name="date" required
+                                                style="padding-top: 55px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <label for="time">Select a time:</label>
+                                            <input type="time" class="form-control pb-4" id="date" name="date" required
+                                                style="padding-top: 55px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Special Request" id="message"
+                                                style="height: 150px"></textarea>
+                                            <label for="message">Additional Comments</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mx-auto">
+                                        <button class="btn btn-info w-100 py-2 text-white fs-4" type="submit">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking section ends here -->
 
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
