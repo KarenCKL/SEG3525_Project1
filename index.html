@@ -14,6 +14,7 @@
         <!-- links to css stylesheet -->
         <link rel="stylesheet" href="./css/main.min.css">
         <link rel="stylesheet" href="./css/style.css">
+
     </head>
 
     <body>
@@ -308,7 +309,8 @@
                             <iframe id="map" class="col-md-12"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.451558405615!2d-75.68254308447863!3d45.420066879100094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a77b5e6c27%3A0x36e89c445bb0a60a!2s150%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%201A2%2C%20Canada!5e0!3m2!1sen!2sus!4v1685382636092!5m2!1sen!2sus"
                                 height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                referrerpolicy="no-referrer-when-downgrade"
+                                alt="map showing location of the clinic"></iframe>
                         </div>
                         <h5 class="text-info fst-italic text-center pt-4 pb-2">Opening Hours</h5>
                         <p class="text-center">Monday - Friday: 9:00 AM - 5:00 PM</p>
@@ -348,9 +350,13 @@
                                         <label for="email">Enter your Email</label>
                                     </div>
                                 </div>
+                                <p class="sr-only">
+                                    Select a Service among Fillings and Restoration, Teeth Whitening, Teeth
+                                    Extraction and Routine Cleanings
+                                </p>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="select">
+                                        <select class="form-select" id="select" aria-label="Select a Service">   
                                             <option value="1">Fillings and Restoration</option>
                                             <option value="2">Teeth Whitening</option>
                                             <option value="3">Teeth Extraction</option>
@@ -359,9 +365,13 @@
                                         <label for="select">Select a Service</label>
                                     </div>
                                 </div>
+                                <p class="sr-only">
+                                    Select a Dentist among Dr James Rodriguez, Dr Bradley Williams and Dr
+                                    Natalie Smith
+                                </p>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="select1">
+                                        <select class="form-select" id="select1" aria-label="Select a Dentist">
                                             <option value="1">Dr James Rodriguez</option>
                                             <option value="2">Dr Bradley Williams</option>
                                             <option value="3">Dr Natalie Smith</option>
@@ -409,7 +419,8 @@
                                                 </div>
                                                 <div class="modal-body m-4">
                                                     <h4 class="text-center">Thank you for your booking!</h4>
-                                                    <p class="text-center">We will contact you shortly to confirm your appointment.</p>
+                                                    <p class="text-center">We will contact you shortly to confirm your
+                                                        appointment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -462,19 +473,19 @@
                     </symbol>
                 </svg>
                 <ul class="nav me-2 col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
+                    <li class="ms-3"><a class="text" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter">Twitter</use>
                             </svg></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
+                                <use xlink:href="#instagram">Instagram</use>
                             </svg></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
+                                <use xlink:href="#facebook">Facebook</use>
                             </svg>
                         </a>
                     </li>
                     <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#linkedin"></use>
+                                <use xlink:href="#linkedin">linkedin</use>
                             </svg>
                         </a>
                     </li>
