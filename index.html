@@ -18,7 +18,6 @@
     </head>
 
     <body>
-
         <!-- navbar starts here -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-info py-3 px-2 sticky-top" aria-label="navbar">
             <div class="container-fluid">
@@ -191,8 +190,9 @@
                             <img class="img-fluid" src="./assets/service1.jpg"
                                 alt="image showing a dentist filling the tooth of a patient">
                             <div class="card-body">
-                                <h5>Fillings and Restorations</h5>
-                                <p class="card-text">To restore the function and appearance of your teeth.</p>
+                                <h5>Fillings and Teeth Extraction</h5>
+                                <p class="card-text">Restoring the function and appearance of your teeth or
+                                    removing a tooth that is badly damaged or causing pain.</p>
                                 <h5>$1200</h5>
                             </div>
                         </div>
@@ -203,20 +203,21 @@
                                 alt="image showing a woman smiling with a set of different tooth colors">
                             <div class="card-body">
                                 <h5>Teeth Whitening</h5>
-                                <p class="card-text">To make your natural teeth appear brighter and enhancing your
-                                    smile.</p>
+                                <p class="card-text">Offering a safe, effective, and personalized treatment to brighten
+                                    your smile and enhance your natural teeth.</p>
                                 <h5>$1500</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img class="img-fluid" src="./assets/service2.png"
+                            <img class="img-fluid" src="./assets/service6.jpg"
                                 alt="image showing a tool holding a tooth">
                             <div class="card-body">
-                                <h5>Teeth Extraction</h5>
-                                <p class="card-text">To remove a tooth that is badly damaged or causing pain and
-                                    problems.</p>
+                                <h5>Personalized Mouthguard</h5>
+                                <p class="card-text">Crafting high-quality, personalized mouthguards for optimal
+                                    fit, comfort, and protection for every
+                                    individual.</p>
                                 <h5>$1200</h5>
                             </div>
                         </div>
@@ -228,8 +229,8 @@
                                 alt="image showing a dentist cleaning the teeth of a patient">
                             <div class="card-body">
                                 <h5>Routine Cleanings</h5>
-                                <p class="card-text">To maintain the health and cleanliness of your teeth through
-                                    cleanings.</p>
+                                <p class="card-text">Providing dental cleanings to maintain oral
+                                    health, prevent cavities, and ensure a bright and healthy smile.</p>
                                 <h5>$1000</h5>
                             </div>
                         </div>
@@ -341,24 +342,24 @@
         <div id="booking">
             <div class="container-fluid bg-info-subtle col-lg-12 pt-5 px-5">
                 <div class="row g-5 px-3 pb-3">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <h2 class="text-info">Ottawa Dental Clinic</h2>
                         <h5 class="py-3 fs-6">Location: 150 Louis Pasteur Private, Ottawa, ON K1N 1A2, Canada</h5>
-                        <div class="map-responsive">
+                        <div class="map-responsive mt-3 mb-1">
                             <iframe id="map" class="col-md-12"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.451558405615!2d-75.68254308447863!3d45.420066879100094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a77b5e6c27%3A0x36e89c445bb0a60a!2s150%20Louis-Pasteur%20Private%2C%20Ottawa%2C%20ON%20K1N%201A2%2C%20Canada!5e0!3m2!1sen!2sus!4v1685382636092!5m2!1sen!2sus"
-                                height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                height="320" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
                                 alt="map showing location of the clinic"></iframe>
                         </div>
-                        <h5 class="text-info fst-italic text-center pt-4 pb-2">Opening Hours</h5>
+                        <h5 class="text-info fst-italic text-center pt-4 pb-2 fs-4">Opening Hours</h5>
                         <p class="text-center">Monday - Friday: 9:00 AM - 5:00 PM</p>
                         <p class="text-center">Saturday: 9:00 AM - 12:30 PM</p>
                         <p class="text-center">Sunday: Closed</p>
                         <p class="text-center">Phone | (613) 555-1234</p>
                         <p class="text-center">Email | dental@ottawaClinic.ca</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <h1 class="text-info mb-4 mt-4">Book an Appointment</h1>
                         <form>
                             <div class="row g-4">
@@ -396,12 +397,18 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select" id="select" aria-label="Select a Service">
-                                            <option value="1">Fillings and Restoration</option>
+                                            <option value="1">Fillings and Teeth Extraction</option>
                                             <option value="2">Teeth Whitening</option>
-                                            <option value="3">Teeth Extraction</option>
+                                            <option value="3">Personalized Mouthguard</option>
                                             <option value="4">Routine Cleanings</option>
                                         </select>
                                         <label for="select">Select a Service</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="price" placeholder="Price" readonly>
+                                        <label for="price">Price</label>
                                     </div>
                                 </div>
                                 <p class="sr-only">
@@ -416,6 +423,18 @@
                                             <option value="3">Dr Natalie Smith</option>
                                         </select>
                                         <label for="select1">Select a Dentist</label>
+                                    </div>
+                                </div>
+                                <p class="sr-only">
+                                    Select a mode of consultation among In Person and Virtual
+                                </p>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select-3" aria-label="Select a mode of consultation">
+                                            <option value="1">In Person</option>
+                                            <option value="2">Virtual</option>
+                                        </select>
+                                        <label for="select-3">Select a mode of consultation</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -440,7 +459,7 @@
                                         <label for="message">Additional Comments</label>
                                     </div>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-md-4 mx-auto pb-3">
                                     <button class="btn btn-info w-100 text-white fs-4" type="button"
                                         data-bs-toggle="modal" data-bs-target="#confirmBooking">Book
                                         Now

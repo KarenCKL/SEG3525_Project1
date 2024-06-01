@@ -35,29 +35,31 @@ body {
     padding-top: 40px;
   }
 }
-/*medium and small screens */
+/* Medium and small screens */
 @media (max-width: 992px) {
-  .navbar-dark .navbar-collapse {
-    margin-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    .navbar-dark .navbar-collapse {
+      margin-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      padding: 10px 0;
+      margin-left: 0;
+    }
+    body.navbar-collapsed #about-us {
+      padding-top: 320px;
+    }
+    body.navbar-collapsed #services {
+      padding-top: 310px;
+    }
+    body.navbar-collapsed #team {
+      padding-top: 300px;
+    }
+    body.navbar-collapsed #booking {
+      padding-top: 300px;
+    }
   }
-  .navbar-dark .navbar-nav .nav-link {
-    padding: 10px 0;
-    margin-left: 0;
-  }
-  #about-us {
-    padding-top: 320px;
-  }
-  #services{
-    padding-top: 310px;
-  }
-  #team{
-    padding-top: 300px;
-  }
-  #booking{
-    padding-top: 300px;
-  }
-}
+  
+  
 /* for smaller screen size */
 .map-responsive {
     position: relative;
