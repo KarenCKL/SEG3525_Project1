@@ -71,6 +71,13 @@ body {
     body.navbar-collapsed #booking {
       padding-top: 300px;
     }
+    .welcome{
+        text-align: center;
+    }
+    .phone_email{
+        display: flex;
+        justify-content: center;
+    }
   }
   
   
