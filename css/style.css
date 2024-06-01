@@ -10,6 +10,20 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
+/* hero section */
+.phone-link:hover {
+    color: #1B9EDA; 
+    transition: color 0.3s; 
+}
+.email-link {
+    text-decoration: none;
+    color: black; 
+}
+
+.email-link:hover {
+    color: #1B9EDA; 
+    transition: color 0.3s;
+}
 
 /* Set the default color of the links */
 .navbar-dark .navbar-nav .nav-link {
@@ -86,6 +100,7 @@ body {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
 
 
 
