@@ -1,5 +1,5 @@
 $(function () {
-    //function pour add padding top to the sections when the navbar is fixed for small and medium screens
+    //function to add padding top to the sections when the navbar is fixed for small and medium screens
     let checkNavbar = function () {
         if ($('#navbar').hasClass('show')) {
             $('body').addClass('navbar-collapsed');
