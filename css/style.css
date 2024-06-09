@@ -72,7 +72,7 @@ body {
     padding-top: 300px;
   }
   body.navbar-collapsed #booking {
-    padding-top: 300px;
+    padding-top: 305px;
   }
   .welcome {
     text-align: center;
@@ -84,6 +84,10 @@ body {
   .card .card-body .card-text {
     min-height: 100px;
   }
+  #AppointmentBtn{
+    display: flex;
+    justify-content: center !important;
+  }
 }
 /* Medium and small screens */
 @media (max-width: 768px) {
@@ -91,6 +95,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #AppointmentBtn{
+    display: flex;
+    justify-content: center !important;
   }
 }
 
