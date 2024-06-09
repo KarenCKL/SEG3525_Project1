@@ -48,6 +48,9 @@ body {
   #booking {
     padding-top: 40px;
   }
+  .card .card-body .card-text {
+    min-height: 75px;
+  }
 }
 /* Medium and small screens */
 @media (max-width: 992px) {
